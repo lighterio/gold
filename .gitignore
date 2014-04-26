@@ -1,4 +1,6 @@
-lib-cov
+.DS_Store
+.idea
+.project
 *.seed
 *.log
 *.csv
@@ -12,4 +14,5 @@ logs
 results
 
 npm-debug.log
+coverage
 node_modules

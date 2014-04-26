@@ -1,0 +1,31 @@
+{
+  "name": "gold",
+  "version": "0.0.0",
+  "description": "Management and monitoring UI for apps built with Lighter",
+  "main": "gold.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerious/gold"
+  },
+  "keywords": [
+    "lighter",
+    "app",
+    "management",
+    "monitoring",
+    "web",
+    "ui",
+    "user",
+    "interface",
+    "development",
+    "environment"
+  ],
+  "author": "Sam Eubank <sameubank@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zerious/gold/issues"
+  },
+  "homepage": "https://github.com/zerious/gold"
+}
