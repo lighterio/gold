@@ -3,13 +3,6 @@
   "version": "0.0.0",
   "description": "Management and monitoring UI for apps built with Lighter",
   "main": "gold.js",
-  "scripts": {
-    "test": "mocha",
-    "retest": "mocha --watch",
-    "cover": "istanbul cover _mocha",
-    "report": "open coverage/lcov-report/index.html",
-    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zerious/gold"
@@ -38,7 +31,7 @@
   "engines": [
     "node >= 0.2.6"
   ],
-  "script": {
+  "scripts": {
     "test": "mocha",
     "retest": "mocha --watch",
     "cover": "istanbul cover _mocha",
