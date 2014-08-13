@@ -5,7 +5,7 @@
   "main": "gold.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zerious/gold"
+    "url": "https://github.com/lighterio/gold"
   },
   "keywords": [
     "lighter",
@@ -20,11 +20,10 @@
     "environment"
   ],
   "author": "Sam Eubank <sameubank@gmail.com>",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zerious/gold/issues"
+    "url": "https://github.com/lighterio/gold/issues"
   },
-  "homepage": "https://github.com/zerious/gold",
+  "homepage": "https://github.com/lighterio/gold",
   "contributors": [
     "Sam Eubank <sameubank@gmail.com>"
   ],
@@ -32,17 +31,24 @@
     "node >= 0.2.6"
   ],
   "scripts": {
-    "test": "mocha",
-    "retest": "mocha --watch",
-    "cover": "istanbul cover _mocha",
+    "test": "./node_modules/exam/exam.js",
+    "retest": "./node_modules/exam/exam.js --watch",
+    "cover": "istanbul cover ./node_modules/exam/exam.js",
     "report": "open coverage/lcov-report/index.html",
-    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
+    "coveralls": "istanbul cover ./node_modules/exam/exam.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
-  "dependencies": {},
+  "dependencies": {
+    "shellify": "0.0.2"
+  },
   "devDependencies": {
-    "zeriousify": "~0.0.1",
-    "mocha": "~1.17.1",
-    "assert-plus": "~0.1.5",
-    "istanbul": "~0.2.6"
-  }
+    "zeriousify": "0.1.9",
+    "exam": "0.0.5",
+    "istanbul": "0.2.11"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/lighterio/gold/blob/master/MIT-LICENSE.md"
+    }
+  ]
 }
