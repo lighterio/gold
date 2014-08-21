@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Management and monitoring UI for apps built with Lighter",
   "main": "gold.js",
+  "bin": "commands/cli.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/lighterio/gold"
@@ -38,7 +39,8 @@
     "coveralls": "istanbul cover ./node_modules/exam/exam.js --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "dependencies": {
-    "shellify": "0.0.2"
+    "lighter": "lighter",
+    "shellify": "0.0.3"
   },
   "devDependencies": {
     "zeriousify": "0.1.9",
