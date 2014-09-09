@@ -1,6 +1,6 @@
 {
   "name": "gold",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Management and monitoring UI for apps built with Lighter",
   "main": "gold.js",
   "bin": "commands/cli.js",
@@ -40,11 +40,11 @@
   },
   "dependencies": {
     "lighter": "lighter",
-    "shellify": "0.0.3"
+    "shellify": "0.0.4"
   },
   "devDependencies": {
     "zeriousify": "0.1.9",
-    "exam": "0.0.5",
+    "exam": "0.0.7",
     "istanbul": "0.2.11"
   },
   "licenses": [
